@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'MiloOT-Medi';
+  src: url('MiloOT-Medi.eot?#iefix') format('embedded-opentype'),  url('MiloOT-Medi.otf')  format('opentype'),
+	     url('MiloOT-Medi.woff') format('woff'), url('MiloOT-Medi.ttf')  format('truetype'), url('MiloOT-Medi.svg#MiloOT-Medi') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

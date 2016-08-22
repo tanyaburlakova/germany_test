@@ -1,0 +1,114 @@
+.section {
+    padding: 35px 0 70px;
+    &__head {
+        margin: 0 0 25px;
+    }
+    &__title {
+        font-family: 'MiloOT-Bold';
+        font-size: 21px;
+        display: inline-block;
+        margin: 0;
+        margin-right: 35px;
+        vertical-align: middle;
+        text-transform: uppercase;
+        color: #1a6ebe;
+    }
+    &__filter {
+        font-family: 'MiloOT-Bold';
+        line-height: 1;
+        position: relative;
+        display: inline-block;
+        padding: 6px 10px 8px 0;
+        vertical-align: middle;
+        color: #1a6ebe;
+        border: 1px solid #b9c3cd;
+        background: #ffffff;
+        &:before {
+            position: absolute;
+            z-index: 3;
+            top: 0;
+            left: -17px;
+            width: 0;
+            height: 0;
+            content: '';
+            border-top: 17px solid transparent;
+            border-right: 17px solid #ffffff;
+            border-bottom: 17px solid transparent;
+        }
+        &:after {
+            position: absolute;
+            z-index: 2;
+            top: -1px;
+            left: -19px;
+            width: 0;
+            height: 0;
+            content: '';
+            border-top: 18px solid transparent;
+            border-right: 18px solid #b9c3cd;
+            border-bottom: 18px solid transparent;
+        }
+    }
+    &__container {
+        font-size: 0;
+        margin: 0 -12px;
+    }
+    &__item {
+        font-size: 16px;
+        display: inline-block;
+        width: 33.33333%;
+        padding: 0 12px;
+        vertical-align: top;
+    }
+    &__link {
+        display: block;
+        margin-bottom: 20px;
+    }
+    &__img {
+        display: block;
+    }
+    &__date {
+        font-family: 'MiloOT-Medi';
+        font-size: 12px;
+        display: block;
+        margin: 0 0 10px;
+        text-transform: uppercase;
+        color: #828c96;
+    }
+    &__name {
+        font-family: 'MiloOT-Medi';
+        font-size: 21px;
+        line-height: 1.2;
+        overflow: hidden;
+        height: 74px;
+        margin: 0 0 10px;
+        .link {
+            color: #000000;
+        }
+    }
+    &__text {
+        font-size: 18px;
+        margin: 0 0 20px;
+        .link {
+            color: #1a6ebe;
+        }
+    }
+    &_4col {
+        .section__item {
+            width: 25%;
+        }
+    }
+    &_bg {
+        background: #f0f5fa;
+        .section__head {
+            margin-bottom: 45px;
+        }
+        .section__link {
+            margin-bottom: 40px;
+        }
+        .section__date {
+            overflow: hidden;
+            height: 61px;
+            margin-bottom: 15px;
+        }
+    }
+}

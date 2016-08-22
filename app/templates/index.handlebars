@@ -2,23 +2,443 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>I love BEM</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+	<title>Test task</title>
 	<link rel="stylesheet" href="css/app.css?v={{timestamp}}">
-	{{>favicon siteUrl="http://localhost:3000"}}
-	<!--[if IE 9]>
-		<link rel="stylesheet" href="css/ie9.css">
-	<![endif]-->
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
 </head>
 <body>
+	<!-- Header -->
+	<header class="site-header">
+		<div class="container">
+			<div class="slogan"></div>
+			{{!-- Logo --}}
+			<a href="" class="logo"></a>
+		</div>
+	</header>
+	<!-- Navigation -->
+	<nav class="navigation">
+		<div class="container">
+			<ul class="navigation__list">
+				<li class="navigation__item jsNavigationHandler" data-nav-handler="startseite">
+					startseite
+				</li>
+				<li class="navigation__item jsNavigationHandler" data-nav-handler="news">
+					news
+				</li>
+				<li class="navigation__item jsNavigationHandler" data-nav-handler="regionen">
+					Regionen & Projekte
+				</li>
+				<li class="navigation__item jsNavigationHandler" data-nav-handler="stipendien">
+					Stipendien
+				</li>
+				<li class="navigation__item jsNavigationHandler" data-nav-handler="veranstaltungen">
+					Veranstaltungen
+				</li>
+				<li class="navigation__item jsNavigationHandler" data-nav-handler="publikationen">
+					Publikationen
+				</li>
+			</ul>
+			<div class="navigation__runner jsNavRunner"></div>
+			<div class="navigation__linner jsNavLinner"></div>
+		</div>
+	</nav>
+	<!-- Navigation content -->
 	<div class="container">
-		{{>button}}
-		{{>inputs}}
-		{{>form}}
+		<div class="navigation-content jsNavigationEl" data-nav-el="startseite">
+			1323 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+		<div class="navigation-content jsNavigationEl" data-nav-el="news">
+			123123 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+		<div class="navigation-content jsNavigationEl" data-nav-el="regionen">
+			<div class="navigation-content__left">
+				<h2 class="navigation-content__title">Regionen & Projekte Startseite</h2>
+				<nav class="regions-nav">
+					<ul class="regions-nav__list">
+						<li class="regions-nav__item">
+							<a href="" class="regions-nav__link">
+								Inlandsarbeit und Nordamerika
+							</a>
+						</li>
+						<li class="regions-nav__item">
+							<a href="" class="regions-nav__link">
+								Mittel-, Südost- und Osteuropa (4)
+							</a>
+						</li>
+						<li class="regions-nav__item">
+							<a href="" class="regions-nav__link">
+								Afrika (12)
+							</a>
+						</li>
+						<li class="regions-nav__item">
+							<a href="" class="regions-nav__link">
+								Mittelmeerländer (2)
+							</a>
+						</li>
+						<li class="regions-nav__item">
+							<a href="" class="regions-nav__link is-active">
+								Lateinamerika (28)
+							</a>
+						</li>
+						<li class="regions-nav__item">
+							<a href="" class="regions-nav__link">
+								Südasien (3)
+							</a>
+						</li>
+						<li class="regions-nav__item">
+							<a href="" class="regions-nav__link">
+								Südost- und Ostasien (8)
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="navigation-content__right">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+		</div>
+		<div class="navigation-content jsNavigationEl" data-nav-el="stipendien">
+			234234456546 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+		<div class="navigation-content jsNavigationEl" data-nav-el="veranstaltungen">
+			23423423 345 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+		<div class="navigation-content jsNavigationEl" data-nav-el="publikationen">
+			werwer erew rty456 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+	</div>
+	<!-- Slider -->
+	<div class="slider jsSlider">
+		<div class="slider__item">
+			<div class="slider__item-inner" style="background-image: url('img/slide.jpg')">
+				<div class="slider__item-content">
+				<ul class="slider__bread-crumbs">
+					<li class="slider__bread-crumbs__item">
+						<a href="" class="slider__bread-crumbs__link">news</a>
+					</li>
+					<li class="slider__bread-crumbs__item">
+						<a href="" class="slider__bread-crumbs__link">Inland</a>
+					</li>
+					<li class="slider__bread-crumbs__item">
+						<a href="" class="slider__bread-crumbs__link">freie demokraten</a>
+					</li>
+				</ul>
+				<h2 class="slider__title">
+					Erfolg in Hamburg für die Freien Demokraten
+				</h2>
+				<p class="slider__desc">
+					Lorem ipsum dolor sit amet, <a href="" class="link">consectetur adipisicing</a> elit.
+				</p>
+				</div>
+			</div>
+		</div>
+		<div class="slider__item">
+			<div class="slider__item-inner" style="background-image: url('img/slide.jpg')">
+				<div class="slider__item-content">
+				<ul class="slider__bread-crumbs">
+					<li class="slider__bread-crumbs__item">
+						<a href="" class="slider__bread-crumbs__link">
+							news
+						</a>
+					</li>
+					<li class="slider__bread-crumbs__item">
+						<a href="" class="slider__bread-crumbs__link">
+							Inland
+						</a>
+					</li>
+					<li class="slider__bread-crumbs__item">
+						<a href="" class="slider__bread-crumbs__link">
+							freie demokraten
+						</a>
+					</li>
+				</ul>
+				<h2 class="slider__title">
+					Erfolg in Hamburg für die Freien Demokraten
+				</h2>
+				<p class="slider__desc">
+					Lorem ipsum dolor sit amet, <a href="" class="link">consectetur adipisicing</a> elit.
+				</p>
+				</div>
+			</div>
+		</div>
+		<div class="slider__item">
+			<div class="slider__item-inner" style="background-image: url('img/slide.jpg')">
+				<div class="slider__item-content">
+				<ul class="slider__bread-crumbs">
+					<li class="slider__bread-crumbs__item">
+						<a href="" class="slider__bread-crumbs__link">
+							news
+						</a>
+					</li>
+					<li class="slider__bread-crumbs__item">
+						<a href="" class="slider__bread-crumbs__link">
+							Inland
+						</a>
+					</li>
+					<li class="slider__bread-crumbs__item">
+						<a href="" class="slider__bread-crumbs__link">
+							freie demokraten
+						</a>
+					</li>
+				</ul>
+				<h2 class="slider__title">
+					Erfolg in Hamburg für die Freien Demokraten
+				</h2>
+				<p class="slider__desc">
+					Lorem ipsum dolor sit amet, <a href="" class="link">consectetur adipisicing</a> elit.
+				</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Slider nav -->
+	<div class="slider-nav">
+		<div class="container jsSliderNav">
+			<div class="slider-nav__item">
+				<a class="slider-nav__link">
+					<span class="slider-nav__info">
+						10.02.2015 / freie demokraten
+					</span>
+					<span class="slider-nav__desc">
+						Erfolg in Hamburg für die Freien Demokraten
+					</span>
+				</a>
+			</div>
+			<div class="slider-nav__item">
+				<a class="slider-nav__link">
+					<span class="slider-nav__info">
+						17.02.2015 / europa
+					</span>
+					<span class="slider-nav__desc">
+						Putin bei Orban: Für wen ist der Besuch wichtiger?
+					</span>
+				</a>
+			</div>
+			<div class="slider-nav__item">
+				<a class="slider-nav__link">
+					<span class="slider-nav__info">
+						10.02.2015 / freie demokraten
+					</span>
+					<span class="slider-nav__desc">
+						Erfolg in Hamburg für die Freien Demokraten
+					</span>
+				</a>
+			</div>
+			<div class="slider-nav__item">
+				<a class="slider-nav__link">
+					<span class="slider-nav__info">
+						17.02.2015 / europa
+					</span>
+					<span class="slider-nav__desc">
+						Putin bei Orban: Für wen ist der Besuch wichtiger?
+					</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- News -->
+	<div class="container">
+		<section class="section">
+			<header class="section__head">
+				<h2 class="section__title">aktuelle news</h2>
+				<a href="" class="section__filter">
+					<span class="icon-text">Alle</span> <i class="icon icon-filter">+</i>
+				</a>
+			</header>
+			<div class="section__container">
+				<article class="section__item">
+					<a class="section__link" href="">
+						<img src="http://2.bp.blogspot.com/-hPa_Z4NkrfY/Tq4C_k1_IxI/AAAAAAAAEhQ/B07z5C20Bb8/s320/Herman-Cain-007.jpg" alt="" class="section__img">
+					</a>
+					<div class="section__date">
+						26.11.2014 / inland
+					</div>
+					<h3 class="section__name"><a class="link" href="">Paqué: „Die große Koalition verspielt die Zukunft.“</a></h3>
+					<p class="section__text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess.
+					</p>
+					<a href="" class="section__read-all btn-more"><i class="icon icon-read-more"></i><span class="icon-text">weiterlesen</span></a>
+				</article>
+				<article class="section__item">
+					<a class="section__link" href="">
+						<img src="http://2.bp.blogspot.com/-hPa_Z4NkrfY/Tq4C_k1_IxI/AAAAAAAAEhQ/B07z5C20Bb8/s320/Herman-Cain-007.jpg" alt="" class="section__img">
+					</a>
+					<div class="section__date">
+						26.11.2014 / inland
+					</div>
+					<h3 class="section__name"><a class="link" href="">Paqué: „Die große Koalition verspielt die Zukunft.“</a></h3>
+					<p class="section__text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess.
+					</p>
+					<a href="" class="section__read-all btn-more"><i class="icon icon-read-more"></i><span class="icon-text">weiterlesen</span></a>
+				</article>
+				<article class="section__item">
+					<a class="section__link" href="">
+						<img src="http://2.bp.blogspot.com/-hPa_Z4NkrfY/Tq4C_k1_IxI/AAAAAAAAEhQ/B07z5C20Bb8/s320/Herman-Cain-007.jpg" alt="" class="section__img">
+					</a>
+					<div class="section__date">
+						26.11.2014 / inland
+					</div>
+					<h3 class="section__name"><a class="link" href="">Paqué: „Die große Koalition verspielt die Zukunft.“</a></h3>
+					<p class="section__text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess.
+					</p>
+					<a href="" class="section__read-all btn-more"><i class="icon icon-read-more"></i><span class="icon-text">weiterlesen</span></a>
+				</article>
+			</div>
+		</section>
+	</div>
+	<!-- Books -->
+	<section class="section section_4col section_bg">
+		<div class="container">
+			<header class="section__head">
+				<h2 class="section__title">publikationen</h2>
+				<a href="" class="section__filter">
+					<span class="icon-text">Alle</span> <i class="icon icon-filter">+</i>
+				</a>
+			</header>
+			<div class="section__container">
+				<article class="section__item">
+					<a class="section__link" href="">
+						<img src="https://images-na.ssl-images-amazon.com/images/I/41Vgg9RSd7L._UY250_.jpg" alt="" class="section__img">
+					</a>
+					<h3 class="section__name"><a class="link" href="">Paqué: „Die große Koalition verspielt die Zukunft.“</a></h3>
+					<p class="section__date">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					</p>
+					<a href="" class="section__read-all btn btn-buy"><i class="icon icon-btn"></i><span class="icon-text">bestellen</span></a>
+				</article>
+				<article class="section__item">
+					<a class="section__link" href="">
+						<img src="https://images-na.ssl-images-amazon.com/images/I/41Vgg9RSd7L._UY250_.jpg" alt="" class="section__img">
+					</a>
+					<h3 class="section__name"><a class="link" href="">Paqué: „Die große Koalition verspielt die Zukunft.“</a></h3>
+					<p class="section__date">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+					</p>
+					<a href="" class="section__read-all btn btn-buy"><i class="icon icon-btn"></i><span class="icon-text">bestellen</span></a>
+				</article>
+				<article class="section__item">
+					<a class="section__link" href="">
+						<img src="https://images-na.ssl-images-amazon.com/images/I/41Vgg9RSd7L._UY250_.jpg" alt="" class="section__img">
+					</a>
+					<h3 class="section__name"><a class="link" href="">Paqué: „Die große Koalition verspielt die Zukunft.“</a></h3>
+					<p class="section__date">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit
+					</p>
+					<a href="" class="section__read-all btn btn-buy"><i class="icon icon-btn"></i><span class="icon-text">bestellen</span></a>
+				</article>
+				<article class="section__item">
+					<a class="section__link" href="">
+						<img src="https://images-na.ssl-images-amazon.com/images/I/41Vgg9RSd7L._UY250_.jpg" alt="" class="section__img">
+					</a>
+					<h3 class="section__name"><a class="link" href="">Paqué: „Die große Koalition verspielt die Zukunft.“</a></h3>
+					<p class="section__date">
+						Lorem ipsum dolor sit amet, consectetur adipisicing
+					</p>
+					<a href="" class="section__read-all btn btn-buy btn-disabled"><i class="icon icon-btn"></i><span class="icon-text">vergriffen</span></a>
+					<div>
+						<a class="btn-pdf"><i class="icon icon-pdf"></i><span class="icon-text">PDF downloaden</span></a>
+					</div>
+				</article>
+			</div>
+		</div>
+	</section>
+	<!-- Events -->
+	<div class="container">
+		<section class="section">
+			<header class="section__head">
+				<h2 class="section__title">veranstaltungen</h2>
+				<a href="" class="section__filter">
+					<span class="icon-text">Alle</span> <i class="icon icon-filter">+</i>
+				</a>
+			</header>
+			<div class="section__container">
+				<article class="section__item">
+					<a class="section__link" href="">
+						<img src="http://2.bp.blogspot.com/-hPa_Z4NkrfY/Tq4C_k1_IxI/AAAAAAAAEhQ/B07z5C20Bb8/s320/Herman-Cain-007.jpg" alt="" class="section__img">
+					</a>
+					<div class="section__date">
+						26.11.2014 / inland
+					</div>
+					<h3 class="section__name"><a class="link" href="">Paqué: „Die große Koalition verspielt die Zukunft.“</a></h3>
+					<p class="section__text">
+						Kostenfreie Online-Konferenz<br/>
+						vom 23.02.2015 bis zum 02.03.2015<br/>
+						im Internet
+					</p>
+					<a href="" class="section__read-all btn btn-event"><i class="icon icon-btn"></i><span class="icon-text">direkt anmelden</span></a>
+				</article>
+				<article class="section__item">
+					<a class="section__link" href="">
+						<img src="http://2.bp.blogspot.com/-hPa_Z4NkrfY/Tq4C_k1_IxI/AAAAAAAAEhQ/B07z5C20Bb8/s320/Herman-Cain-007.jpg" alt="" class="section__img">
+					</a>
+					<div class="section__date">
+						26.11.2014 / inland
+					</div>
+					<h3 class="section__name"><a class="link" href="">Paqué: „Die große Koalition verspielt die Zukunft.“</a></h3>
+					<p class="section__text">
+						<a class="link" href="">Kostenfreie Online-Konferenz</a><br/>
+						vom 23.02.2015 bis zum 02.03.2015<br/>
+						im Internet
+					</p>
+					<a href="" class="section__read-all btn btn-event"><i class="icon icon-btn"></i><span class="icon-text">direkt anmelden</span></a>
+				</article>
+				<article class="section__item">
+					<a class="section__link" href="">
+						<img src="http://2.bp.blogspot.com/-hPa_Z4NkrfY/Tq4C_k1_IxI/AAAAAAAAEhQ/B07z5C20Bb8/s320/Herman-Cain-007.jpg" alt="" class="section__img">
+					</a>
+					<div class="section__date">
+						26.11.2014 / inland
+					</div>
+					<h3 class="section__name"><a class="link" href="">Paqué: „Die große Koalition verspielt die Zukunft.“</a></h3>
+					<p class="section__text">
+						Kostenfreie Online-Konferenz<br/>
+						vom 23.02.2015 bis zum 02.03.2015<br/>
+						im Internet
+					</p>
+					<a href="" class="section__read-all btn btn-event btn-disabled"><i class="icon icon-btn"></i><span class="icon-text">ausgebucht</span></a>
+				</article>
+			</div>
+		</section>
 	</div>
 	<script src="js/plugins.min.js"></script>
 	<script src="js/app.js?v={{timestamp}}"></script>

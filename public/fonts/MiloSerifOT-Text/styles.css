@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'MiloSerifOT-Text';
+  src: url('MiloSerifOT-Text.eot?#iefix') format('embedded-opentype'),  url('MiloSerifOT-Text.otf')  format('opentype'),
+	     url('MiloSerifOT-Text.woff') format('woff'), url('MiloSerifOT-Text.ttf')  format('truetype'), url('MiloSerifOT-Text.svg#MiloSerifOT-Text') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

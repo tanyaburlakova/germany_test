@@ -14,6 +14,10 @@ import notify from 'gulp-notify';
 import babel from 'gulp-babel';
 import templateData from './app/data/data.json';
 import mainBowerFiles from 'main-bower-files';
+import imagemin from 'gulp-imagemin';
+import pngquant from 'imagemin-pngquant';
+import imageminMozjpeg from 'imagemin-mozjpeg';
+import spritesmith from 'gulp.spritesmith';
 let bowerFiles = mainBowerFiles();
 
 console.info(`
@@ -209,4 +213,38 @@ Efficiency: ${efficiency}%
 			`);
 		}))
 		.pipe(gulp.dest('public/css'));
+});
+
+/******************************
+ * Sprite
+ ******************************/
+gulp.task('sprite', function() {
+    var spriteData =
+        gulp.src('assets/img/sprite/*.*')
+        .pipe(spritesmith({
+            imgName: 'sprite.png',
+            cssName: 'sprite.less',
+            cssFormat: 'less',
+            algorithm: 'binary-tree',
+            imgPath: '../img/sprite.png'
+        }));
+
+    spriteData.img.pipe(gulp.dest('assets/img'));
+    spriteData.css.pipe(gulp.dest('app/less'));
+});
+
+/******************************
+ * Images Optimization
+ ******************************/
+gulp.task('imagemin', function() {
+    return gulp.src('assets/img/**/*.*')
+        .pipe(imagemin({
+            interlaced: true,
+            progressive: true,
+            plugins: [
+                pngquant(),
+                imageminMozjpeg()
+            ]
+        }))
+        .pipe(gulp.dest('assets/img'));
 });

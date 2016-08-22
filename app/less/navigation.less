@@ -1,0 +1,130 @@
+.navigation {
+    border-top: 5px solid #e6ebf0;
+    &__list {
+        .list-reset();
+        margin: 0 -8px;
+
+        .clearfix;
+    }
+    &__item {
+        float: left;
+        margin-right: 24px;
+        font-family: 'MiloOT-Medi';
+        font-size: 17px;
+        display: block;
+        padding: 15px 8px;
+        text-transform: uppercase;
+        color: #828c96;
+        cursor: pointer;
+        &.is-active {
+            color: #000;
+        }
+    }
+    &__runner {
+        position: absolute;
+        z-index: 2;
+        bottom: -12px;
+        left: 0;
+        width: 24px;
+        height: 12px;
+        transition: all .3s ease-out;
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            content: '';
+            border-right: 12px solid transparent;
+            border-bottom: 12px solid #196ebe;
+            border-left: 12px solid transparent;
+        }
+        &:after {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 0;
+            height: 0;
+            content: '';
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid #ffffff;
+            border-left: 10px solid transparent;
+        }
+        &.is-active {
+            opacity: 1;
+            visibility: visible;
+            z-index: 2;
+        }
+    }
+    &__linner {
+        background: #196ebe;
+        position: absolute;
+        top: -5px;
+        left: 12px;
+        height: 5px;
+        transition: all .3s ease-in;
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+        &.is-active {
+            opacity: 1;
+            visibility: visible;
+            z-index: 2;
+        }
+    }
+}
+
+.navigation-content {
+    position: relative;
+    display: none;
+    margin: 10px -8px 45px;
+    padding-top: 40px;
+    border-top: 2px solid #196ebe;
+
+    .clearfix;
+    &.is-active {
+        display: block;
+    }
+    &__left {
+        float: left;
+        width: 265px;
+    }
+    &__right {
+        float: right;
+        width: 720px;
+    }
+    &__title {
+        font-family: 'MiloOT-Medi';
+        font-size: 16px;
+        margin: 0 0 30px;
+        padding: 5px 8px;
+        border-top: 2px solid #e6ebf0;
+        border-bottom: 2px solid #e6ebf0;
+    }
+}
+
+.regions-nav {
+    margin-left: 16px;
+    &__list {
+        .list-reset();
+    }
+    &__item {
+        &:last-child {
+            .regions-nav__link {
+                border-bottom: 2px solid #e6ebf0;
+            }
+        }
+    }
+    &__link {
+        font-size: 16px;
+        display: block;
+        padding: 4px 8px;
+        border-top: 2px solid #e6ebf0;
+        &.is-active {
+            color: #ebc700;
+        }
+    }
+}

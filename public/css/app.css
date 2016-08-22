@@ -1,0 +1,1232 @@
+@charset "UTF-8";
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+}
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0;
+}
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  /* 1 */
+  display: block;
+}
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+template,
+[hidden] {
+  display: none;
+}
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+optgroup {
+  font-weight: bold;
+}
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+.slick-track:before,
+.slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+/* Arrows */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+.slick-prev:hover,
+.slick-next:hover,
+.slick-prev:focus,
+.slick-next:focus {
+  outline: none;
+  background: transparent;
+  color: transparent;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-prev {
+  left: -25px;
+}
+.slick-prev[dir="rtl"] {
+  left: auto;
+  right: -25px;
+}
+.slick-prev:before {
+  content: "←";
+}
+.slick-prev:before[dir="rtl"] {
+  content: "→";
+}
+.slick-next {
+  right: -25px;
+}
+.slick-next[dir="rtl"] {
+  left: -25px;
+  right: auto;
+}
+.slick-next:before {
+  content: "→";
+}
+.slick-next:before[dir="rtl"] {
+  content: "←";
+}
+/* Dots */
+.slick-dotted .slick-slider {
+  margin-bottom: 30px;
+}
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none;
+}
+.slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "•";
+  width: 20px;
+  height: 20px;
+  font-size: 6px;
+  line-height: 20px;
+  text-align: center;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before {
+  color: black;
+}
+/* Micro ClearFix Mixin */
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.dibfix {
+  font-size: 0;
+}
+@font-face {
+  font-family: 'MiloSerifOT-Text';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/MiloSerifOT-Text/MiloSerifOT-Text.eot?#iefix') format('embedded-opentype'), url('../fonts/MiloSerifOT-Text/MiloSerifOT-Text.otf') format('opentype'), url('../fonts/MiloSerifOT-Text/MiloSerifOT-Text.woff') format('woff'), url('../fonts/MiloSerifOT-Text/MiloSerifOT-Text.ttf') format('truetype'), url('../fonts/MiloSerifOT-Text/MiloSerifOT-Text.svg#MiloSerifOT-Text') format('svg');
+}
+@font-face {
+  font-family: 'MiloOT-Text';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/MiloOT-Text/MiloOT-Text.eot?#iefix') format('embedded-opentype'), url('../fonts/MiloOT-Text/MiloOT-Text.otf') format('opentype'), url('../fonts/MiloOT-Text/MiloOT-Text.woff') format('woff'), url('../fonts/MiloOT-Text/MiloOT-Text.ttf') format('truetype'), url('../fonts/MiloOT-Text/MiloOT-Text.svg#MiloOT-Text') format('svg');
+}
+@font-face {
+  font-family: 'MiloOT-Medi';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/MiloOT-Medi/MiloOT-Medi.eot?#iefix') format('embedded-opentype'), url('../fonts/MiloOT-Medi/MiloOT-Medi.otf') format('opentype'), url('../fonts/MiloOT-Medi/MiloOT-Medi.woff') format('woff'), url('../fonts/MiloOT-Medi/MiloOT-Medi.ttf') format('truetype'), url('../fonts/MiloOT-Medi/MiloOT-Medi.svg#MiloOT-Medi') format('svg');
+}
+@font-face {
+  font-family: 'MiloOT-Bold';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/MiloOT-Bold/MiloOT-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/MiloOT-Bold/MiloOT-Bold.otf') format('opentype'), url('../fonts/MiloOT-Bold/MiloOT-Bold.woff') format('woff'), url('../fonts/MiloOT-Bold/MiloOT-Bold.ttf') format('truetype'), url('../fonts/MiloOT-Bold/MiloOT-Bold.svg#MiloOT-Bold') format('svg');
+}
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+body {
+  font-family: 'MiloOT-Text';
+  font-size: 18px;
+  line-height: 1.4;
+  color: #000000;
+  min-width: 1050px;
+}
+.container {
+  width: 1050px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: #828c96;
+}
+a:hover {
+  color: #EBC703;
+}
+* {
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+.icon-text {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.icon-read-more {
+  background-image: url(../img/sprite.png);
+  background-position: -416px -38px;
+  width: 24px;
+  height: 24px;
+}
+.icon-pdf {
+  background-image: url(../img/sprite.png);
+  background-position: -440px -38px;
+  width: 18px;
+  height: 22px;
+}
+.icon-filter {
+  font-style: normal;
+  margin-left: 25px;
+  color: #ecd700;
+  font-family: 'MiloOT-Bold';
+}
+.btn-more {
+  font-family: 'MiloOT-Medi';
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  text-transform: uppercase;
+  color: #000000;
+}
+.btn {
+  font-family: 'MiloOT-Bold';
+  font-size: 16px;
+  display: inline-block;
+  padding: 5px 10px;
+  vertical-align: top;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+.btn-event {
+  width: 192px;
+  color: #0064be;
+  background: #f2de00;
+}
+.btn-event .icon-btn {
+  background-image: url(../img/sprite.png);
+  background-position: -492px -38px;
+  width: 15px;
+  height: 16px;
+}
+.btn-event:hover {
+  color: #0064be;
+}
+.btn-buy {
+  width: 145px;
+  color: #ffffff;
+  background: #1a6ebe;
+}
+.btn-buy .icon-btn {
+  background-image: url(../img/sprite.png);
+  background-position: -458px -38px;
+  width: 17px;
+  height: 16px;
+}
+.btn-disabled {
+  color: #ffffff;
+  background: #c0c5ca;
+}
+.btn-disabled .icon-btn {
+  background-image: url(../img/sprite.png);
+  background-position: -475px -38px;
+  width: 17px;
+  height: 16px;
+}
+.btn-disabled:hover {
+  cursor: default;
+  color: #ffffff;
+  background: #c0c5ca;
+}
+.btn-pdf {
+  display: inline-block;
+  margin: 20px 0 0 8px;
+  vertical-align: top;
+}
+.btn-pdf .icon-text {
+  font-size: 14px;
+  text-decoration: underline;
+}
+.site-header {
+  padding: 20px 0;
+  zoom: 1;
+}
+.site-header:before,
+.site-header:after {
+  content: "";
+  display: table;
+}
+.site-header:after {
+  clear: both;
+}
+.slogan {
+  float: left;
+  margin-top: 40px;
+  background-image: url(../img/sprite.png);
+  background-position: -343px 0px;
+  width: 505px;
+  height: 38px;
+}
+.logo {
+  display: block;
+  float: right;
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 343px;
+  height: 124px;
+}
+@media (min-width: 1050px) {
+  .logo {
+    margin-right: -25px;
+  }
+}
+.navigation {
+  border-top: 5px solid #e6ebf0;
+}
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin: 0 -8px;
+  zoom: 1;
+}
+.navigation__list:before,
+.navigation__list:after {
+  content: "";
+  display: table;
+}
+.navigation__list:after {
+  clear: both;
+}
+.navigation__item {
+  float: left;
+  margin-right: 24px;
+  font-family: 'MiloOT-Medi';
+  font-size: 17px;
+  display: block;
+  padding: 15px 8px;
+  text-transform: uppercase;
+  color: #828c96;
+  cursor: pointer;
+}
+.navigation__item.is-active {
+  color: #000;
+}
+.navigation__runner {
+  position: absolute;
+  z-index: 2;
+  bottom: -12px;
+  left: 0;
+  width: 24px;
+  height: 12px;
+  transition: all 0.3s ease-out;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+}
+.navigation__runner:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  content: '';
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid #196ebe;
+  border-left: 12px solid transparent;
+}
+.navigation__runner:after {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 0;
+  height: 0;
+  content: '';
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #ffffff;
+  border-left: 10px solid transparent;
+}
+.navigation__runner.is-active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+.navigation__linner {
+  background: #196ebe;
+  position: absolute;
+  top: -5px;
+  left: 12px;
+  height: 5px;
+  transition: all 0.3s ease-in;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+}
+.navigation__linner.is-active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+.navigation-content {
+  position: relative;
+  display: none;
+  margin: 10px -8px 45px;
+  padding-top: 40px;
+  border-top: 2px solid #196ebe;
+  zoom: 1;
+}
+.navigation-content:before,
+.navigation-content:after {
+  content: "";
+  display: table;
+}
+.navigation-content:after {
+  clear: both;
+}
+.navigation-content.is-active {
+  display: block;
+}
+.navigation-content__left {
+  float: left;
+  width: 265px;
+}
+.navigation-content__right {
+  float: right;
+  width: 720px;
+}
+.navigation-content__title {
+  font-family: 'MiloOT-Medi';
+  font-size: 16px;
+  margin: 0 0 30px;
+  padding: 5px 8px;
+  border-top: 2px solid #e6ebf0;
+  border-bottom: 2px solid #e6ebf0;
+}
+.regions-nav {
+  margin-left: 16px;
+}
+.regions-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.regions-nav__item:last-child .regions-nav__link {
+  border-bottom: 2px solid #e6ebf0;
+}
+.regions-nav__link {
+  font-size: 16px;
+  display: block;
+  padding: 4px 8px;
+  border-top: 2px solid #e6ebf0;
+}
+.regions-nav__link.is-active {
+  color: #ebc700;
+}
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+.slider__item-inner {
+  height: 510px;
+  margin: 0 5px;
+  padding: 165px 65px 0;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.slider__title {
+  font-family: 'MiloSerifOT-Text';
+  font-size: 60px;
+  line-height: 1;
+  margin: 0 0 25px;
+  color: #28323c;
+}
+.slider__bread-crumbs {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+.slider__bread-crumbs__item {
+  font-size: 14px;
+  display: inline-block;
+  padding-right: 2px;
+  vertical-align: middle;
+  color: #6e7882;
+}
+.slider__bread-crumbs__item:not(:last-child):after {
+  padding-left: 2px;
+  content: '>';
+}
+.slider__bread-crumbs__link {
+  font-size: 14px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #6e7882;
+}
+.slider__desc {
+  text-transform: uppercase;
+  color: #6e7882;
+}
+.slider__desc .link {
+  color: #1a6ebe;
+}
+.slider__item-content {
+  width: 550px;
+}
+.slider .slick-arrow {
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  text-indent: -9999px;
+  background: rgba(50, 85, 115, 0.75);
+}
+.slider .slick-prev {
+  left: 0;
+}
+.slider .slick-prev:before {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  right: 15px;
+  content: '';
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  background-image: url(../img/sprite.png);
+  background-position: -343px -38px;
+  width: 25px;
+  height: 41px;
+}
+.slider .slick-prev:after {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  width: 70px;
+  height: 100%;
+  content: '';
+  opacity: .3;
+  background: linear-gradient(to right, rgba(245, 245, 245, 0) 0%, rgba(245, 245, 245, 0) 0%, #000000 100%);
+}
+.slider .slick-next {
+  right: 0;
+}
+.slider .slick-next:after {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 100%;
+  content: '';
+  opacity: .3;
+  background: linear-gradient(to right, #000000 0%, rgba(245, 245, 245, 0) 100%);
+}
+.slider .slick-next:before {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 15px;
+  content: '';
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  background-image: url(../img/sprite.png);
+  background-position: -368px -38px;
+  width: 24px;
+  height: 41px;
+}
+@media (min-width: 1200px) {
+  .slider .slick-arrow {
+    width: 150px;
+  }
+}
+@media (min-width: 1500px) {
+  .slider .slick-arrow {
+    width: 300px;
+  }
+}
+.slider-nav {
+  background: #f0f5fa;
+}
+.slider-nav__item {
+  height: 145px;
+  padding-top: 20px;
+  cursor: pointer;
+}
+.slider-nav__item.slick-current {
+  position: relative;
+}
+.slider-nav__item.slick-current:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 170px;
+  content: '';
+  border-bottom: 4px solid #f2de00;
+}
+.slider-nav__item.slick-current .slider-nav__desc {
+  color: #000000;
+}
+.slider-nav__info {
+  font-family: 'MiloOT-Medi';
+  font-size: 12px;
+  display: block;
+  margin: 0 0 12px;
+  text-transform: uppercase;
+  color: #828c96;
+}
+.slider-nav__desc {
+  font-family: 'MiloSerifOT-Text';
+  font-size: 19px;
+  margin: 0;
+  color: #828c96;
+}
+.section {
+  padding: 35px 0 70px;
+}
+.section__head {
+  margin: 0 0 25px;
+}
+.section__title {
+  font-family: 'MiloOT-Bold';
+  font-size: 21px;
+  display: inline-block;
+  margin: 0;
+  margin-right: 35px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #1a6ebe;
+}
+.section__filter {
+  font-family: 'MiloOT-Bold';
+  line-height: 1;
+  position: relative;
+  display: inline-block;
+  padding: 6px 10px 8px 0;
+  vertical-align: middle;
+  color: #1a6ebe;
+  border: 1px solid #b9c3cd;
+  background: #ffffff;
+}
+.section__filter:before {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: -17px;
+  width: 0;
+  height: 0;
+  content: '';
+  border-top: 17px solid transparent;
+  border-right: 17px solid #ffffff;
+  border-bottom: 17px solid transparent;
+}
+.section__filter:after {
+  position: absolute;
+  z-index: 2;
+  top: -1px;
+  left: -19px;
+  width: 0;
+  height: 0;
+  content: '';
+  border-top: 18px solid transparent;
+  border-right: 18px solid #b9c3cd;
+  border-bottom: 18px solid transparent;
+}
+.section__container {
+  font-size: 0;
+  margin: 0 -12px;
+}
+.section__item {
+  font-size: 16px;
+  display: inline-block;
+  width: 33.33333%;
+  padding: 0 12px;
+  vertical-align: top;
+}
+.section__link {
+  display: block;
+  margin-bottom: 20px;
+}
+.section__img {
+  display: block;
+}
+.section__date {
+  font-family: 'MiloOT-Medi';
+  font-size: 12px;
+  display: block;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  color: #828c96;
+}
+.section__name {
+  font-family: 'MiloOT-Medi';
+  font-size: 21px;
+  line-height: 1.2;
+  overflow: hidden;
+  height: 74px;
+  margin: 0 0 10px;
+}
+.section__name .link {
+  color: #000000;
+}
+.section__text {
+  font-size: 18px;
+  margin: 0 0 20px;
+}
+.section__text .link {
+  color: #1a6ebe;
+}
+.section_4col .section__item {
+  width: 25%;
+}
+.section_bg {
+  background: #f0f5fa;
+}
+.section_bg .section__head {
+  margin-bottom: 45px;
+}
+.section_bg .section__link {
+  margin-bottom: 40px;
+}
+.section_bg .section__date {
+  overflow: hidden;
+  height: 61px;
+  margin-bottom: 15px;
+}
+
+/*# sourceMappingURL=../css/app.css.map */

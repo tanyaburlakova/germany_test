@@ -1,0 +1,25 @@
+.site-header {
+    padding: 20px 0;
+
+    .clearfix;
+}
+
+.slogan {
+    float: left;
+    margin-top: 40px;
+
+    .sprite(@slogan);
+}
+
+.logo {
+    display: block;
+    float: right;
+
+    .sprite(@logo);
+}
+
+@media (min-width: 1050px) {
+    .logo {
+        margin-right: -25px;
+    }
+}
